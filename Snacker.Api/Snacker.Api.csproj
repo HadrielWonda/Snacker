@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+  
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Snacker.Contracts\Snacker.Contracts.csproj" />
+    <ProjectReference Include="..\Snacker.Application\Snacker.Application.csproj" />
+    <ProjectReference Include="..\Snacker.Infrastructure\Snacker.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

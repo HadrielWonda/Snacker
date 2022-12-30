@@ -1,0 +1,12 @@
+#host http://localhost/5056/
+
+POST http://localhost/5056/auth/register
+#"content-type" : "application/json"
+
+{
+"firstName" : "Wale",
+"lastName" : "Abany",
+"email" : "olawalebash20172gmail.com",
+"password" : "bluddah" 
+
+}

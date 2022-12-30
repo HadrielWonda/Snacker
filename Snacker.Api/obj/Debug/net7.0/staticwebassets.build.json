@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WRwzxCWR6JA2nzz97auIQzD0tMc/VCKvHGxNYlluqMs=",
+  "Source": "Snacker.Api",
+  "BasePath": "_content/Snacker.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
