@@ -7,4 +7,4 @@ public record AuthenticationResult(
     string lastName,
     string email,
     string token
-)
+);
