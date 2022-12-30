@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Snacker.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Snacker.Application": "1.0.0"
+        },
+        "runtime": {
+          "Snacker.Infrastructure.dll": {}
+        }
+      },
+      "Snacker.Application/1.0.0": {
+        "dependencies": {
+          "Snacker.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Snacker.Application.dll": {}
+        }
+      },
+      "Snacker.Domain/1.0.0": {
+        "runtime": {
+          "Snacker.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Snacker.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Snacker.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Snacker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

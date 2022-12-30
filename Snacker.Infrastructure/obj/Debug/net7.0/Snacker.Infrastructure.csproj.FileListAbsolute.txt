@@ -1,0 +1,17 @@
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Infrastructure.deps.json
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Infrastructure.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Infrastructure.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Application.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Domain.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Application.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\bin\Debug\net7.0\Snacker.Domain.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.AssemblyInfo.cs
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.csproj.CopyComplete
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\refint\Snacker.Infrastructure.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\Snacker.Infrastructure.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Infrastructure\obj\Debug\net7.0\ref\Snacker.Infrastructure.dll
