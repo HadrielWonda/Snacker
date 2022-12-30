@@ -1,0 +1,12 @@
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\bin\Debug\net7.0\Snacker.Contracts.deps.json
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\bin\Debug\net7.0\Snacker.Contracts.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\bin\Debug\net7.0\Snacker.Contracts.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.csproj.AssemblyReference.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.AssemblyInfoInputs.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.AssemblyInfo.cs
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\refint\Snacker.Contracts.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\Snacker.Contracts.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Contracts\obj\Debug\net7.0\ref\Snacker.Contracts.dll

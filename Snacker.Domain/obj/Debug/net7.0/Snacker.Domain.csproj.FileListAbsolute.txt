@@ -1,0 +1,12 @@
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\bin\Debug\net7.0\Snacker.Domain.deps.json
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\bin\Debug\net7.0\Snacker.Domain.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\bin\Debug\net7.0\Snacker.Domain.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.csproj.AssemblyReference.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.AssemblyInfoInputs.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.AssemblyInfo.cs
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\refint\Snacker.Domain.dll
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\Snacker.Domain.pdb
+C:\Users\WALE\Desktop\projects\repos\Snacker\Snacker.Domain\obj\Debug\net7.0\ref\Snacker.Domain.dll
