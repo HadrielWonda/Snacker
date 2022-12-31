@@ -17,6 +17,7 @@ public static IServiceCollection.AddInfrastructure(this IServiceCollection servi
     services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
     services.AddSingleton<IJwtTokenGenerator,JwtTokenGenerator>();
     services.AddSingleton<IDateTimeProvider,DateTimeProvider>();
+    services.AddScoped<IUserRepository,UserRepository>();
     return services;
 }
 }

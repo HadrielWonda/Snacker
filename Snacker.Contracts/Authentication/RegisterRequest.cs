@@ -1,4 +1,4 @@
-sing System;
+using System;
 using System.Linq;
 
 namespace Snacker.Contracts.Authentication;
@@ -9,4 +9,4 @@ public record RegisterRequest(
     string email,
     string password,
 
-)
+);

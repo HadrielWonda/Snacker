@@ -16,7 +16,7 @@ public JwtTokenGenerator(IDateTimeProvider dateTimeProvider,IOptions<JwtSettings
     _jwtSettings = jwtOptions.Value;
 }
 
-public string GenerateToken(Guid userId,string firstName,string lastName)
+public string GenerateToken(User user)
 {
     var signingCredentials = new SigningCredentials(
         new SymmetricSecurityKey(
@@ -26,9 +26,9 @@ public string GenerateToken(Guid userId,string firstName,string lastName)
     );
     var claims = _new[]
     {
-        new Claiim(JwtRegisteredClaimNames.Sub,userId.ToString()),
-        new Claiim(JwtRegisteredClaimNames.GivenName,firstName),
-        new Claiim(JwtRegisteredClaimNames.FamilyName,lastName),
+        new Claiim(JwtRegisteredClaimNames.Sub,User.Id.ToString()),
+        new Claiim(JwtRegisteredClaimNames.GivenName,User.FirstName),
+        new Claiim(JwtRegisteredClaimNames.FamilyName,User.LastName),
         new Claiim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
         
     };
@@ -43,7 +43,7 @@ public string GenerateToken(Guid userId,string firstName,string lastName)
 
 
     return new JwtSecurityTokenHandler().WriteToken(securityToken);
- //throw new NotImplementedException();
+    //throw new NotImplementedException();
 }
 
 }
