@@ -26,11 +26,11 @@ var app = builder.Build();
 app.UseExceptionHandler("/error");
 
 app.Map("/error",{HttpContext httpContext} =>
-{
-    Exception? exception = httpContext.Features.Get<IExceptionHandlerFearure>()?.Error;
+//{
+//    Exception? exception = httpContext.Features.Get<IExceptionHandlerFearure>()?.Error;
 
-    return Results.Problem();
-}
+  //  return Results.Problem();
+//}
 
 )
 app.UseMiddleware<ErrorHandlingMiddleware>();
