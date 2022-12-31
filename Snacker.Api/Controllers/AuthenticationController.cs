@@ -1,13 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
+using System.Net;
+using System.Net.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
 
 namespace Snacker.Api.Controllers;
 
 
 [ApiController]
-[Route "(auth)"]
+[Route ("auth")]
+[ErrorHandlingMiddleware]
 public class AuthenticationController : ControllerBase
 {
-    private readonly IAuthenticationService _authenticationService;
+    private readonly IAuthenticationService _authenticationService
     [HttpPost ("register")]
     
     public IActionResult Register(RegisterRequest request)
