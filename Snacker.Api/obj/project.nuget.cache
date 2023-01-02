@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "KsHH38aX9MY7QY+jLS0XkusjDBIPjNmtJGSi9YnrsslLtVPVkmvc+7P+p8EqcINFum+6tzND3dI75oHqjXcB4A==",
+  "dgSpecHash": "V0RH22Ir0GafG2dyLbh2ceoyq7BtANOS0HjxLbGGWZ1bNsBsx+9O2KHiEeu50iApBxsmXzuAcy5HlHXYfiUxAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WALE\\Desktop\\projects\\repos\\Snacker\\Snacker.Api\\Snacker.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\WALE\\.nuget\\packages\\fluentresults\\3.15.1\\fluentresults.3.15.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mapster.dependencyinjection\\1.0.0\\mapster.dependencyinjection.1.0.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.25.1\\microsoft.identitymodel.abstractions.6.25.1.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.25.1\\microsoft.identitymodel.jsonwebtokens.6.25.1.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.identitymodel.logging\\6.25.1\\microsoft.identitymodel.logging.6.25.1.nupkg.sha512",
@@ -13,11 +22,19 @@
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\oneof\\3.0.223\\oneof.3.0.223.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.25.1\\system.identitymodel.tokens.jwt.6.25.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\WALE\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+    "C:\\Users\\WALE\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -22,7 +22,10 @@ namespace Snacker.Application.Authentication.Commands.Register;
        }
 
         public Task<OneOf<AuthenticationResult,IError>> Handle(RegisterCommand command, CancellationToken cancellationToken )
-        {
+        {     
+            await Task.CompletedTask; //this here and in LoginQueryhandler is dummy to fill-in for lack of async logic
+
+
               //1. Validate user doesn't exist
         if (_userRepository.GetUserByEmail(command.Email) != null)
         {

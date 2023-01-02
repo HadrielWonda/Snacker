@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,10 @@ namespace Snacker.Application.Authentication.Queries.Login;
 
         public async Task<OneOf<AuthenticationResult,IError>> Handle(LoginQuery query, CancellationToken cancellationToken )
         {
+
+          await Task.CompletedTask;
+
+
          // 1.Verify User Existence
        if (_userRepository.GetUserByEmail(query.Email)is not User user)
        {
@@ -37,4 +42,6 @@ namespace Snacker.Application.Authentication.Queries.Login;
        throw new NotImplementedException();
 
         }
+
+    }
 

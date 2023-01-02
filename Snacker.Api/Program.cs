@@ -4,18 +4,18 @@ using System;
 using Snacker.Api.Middleware;
 using Snacker.Application;
 using Snacker.Infrastructure;
+using Snacker.Api;
 
 
 var builder = WebApplication.CreateBuilder(args);
 {
 builder.Services
+.AddPresentation();
 .AddApplication();
 .AddInfrastructure(builder.Configuration);
 
 //builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingsFilterAttributes>());
-builder.Services.AddControllers();
 
-builder.Services.AddSingleton<ProblemDetailsFactory,SnackerProblemDetailsFactory>();
 }
 
 
@@ -32,8 +32,8 @@ app.Map("/error",{HttpContext httpContext} =>
   //  return Results.Problem();
 //}
 
-)
-app.UseMiddleware<ErrorHandlingMiddleware>();
+);
+//app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();

@@ -54,6 +54,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -125,6 +133,24 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "oneof": {
+              "target": "Package",
+              "version": "[3.0.223, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

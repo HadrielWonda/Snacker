@@ -26,20 +26,22 @@ namespace Snacker.Api.Controllers;
 public class AuthenticationController : ControllerBase
 {
     private readonly ISender _mediator
+    private readonly IMapper _mapper
    
-   public AuthenticationController(ISender _mediator)
+   public AuthenticationController(ISender mediator, IMapper mapper )
    {
-    _mediatR = mediatR;
+    _mediator = mediator;
+    _mapper = mapper;
    }
     [HttpPost ("register")]
     
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var command = new RegisterCommand(request.FirstName, request.LastName, request.Email,request.Password);
+        var command = _mapper.Map<RegisterCommand>(request);
         OneOf<AuthenticationResult, IError> authResult = await _mediator.Send(command);
         
         return authResult.Match(
-            authResult =>Ok(MapAuthResult(authResukt)),
+            authResult =>Ok(_mapper.Map<AuthenticationResponse>()(authResukt)),
             errors => Problem(errors);
         );
 
@@ -54,7 +56,7 @@ public class AuthenticationController : ControllerBase
     
     public async Task<IActionResult> Login(LoginRequest request)
     {
-         var query = newLoginQuery(request.Email,request.Password);
+         var query = _mapper.Map<LoginQuery>(request);
          var authResult = await _mediator.Send(query);
        if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
        {
@@ -70,16 +72,6 @@ public class AuthenticationController : ControllerBase
        );
     }
 
-    private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
-    {
-        return new AuthenticationResponse(
-            authResult.User.Id,
-            authResult.User.FirstName,
-            authResult.User.LastName,
-            authResult.User.Email,
-            authResult.User.Password
-        );
-    }
-    
+   
 
 
