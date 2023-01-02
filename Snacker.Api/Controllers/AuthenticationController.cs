@@ -1,4 +1,12 @@
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Http.Headers;
+using System.Reflection.Metadata.Ecma335;
+using System.Net.Cache;
 using Microsoft.AspNetCore.Mvc;
+using Snacker.Application.Authentication.Common;
+using Snacker.Application.Services.Authentication.Commands;
+using Snacker.Application.Services.Authentication.Queries;
+using Snacker.Application.Services.Authentication.With;
 using System.Threading;
 using System.Net;
 using System.Net.Http;
@@ -17,51 +25,61 @@ namespace Snacker.Api.Controllers;
 [ErrorHandlingMiddleware]
 public class AuthenticationController : ControllerBase
 {
-    private readonly IAuthenticationService _authenticationService
+    private readonly ISender _mediator
+   
+   public AuthenticationController(ISender _mediator)
+   {
+    _mediatR = mediatR;
+   }
     [HttpPost ("register")]
     
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        OneOf<AuthenticationResult, IError> registerResult = _authenticationService.Register(request.firstName,request.lastName,request.email,request.password);
+        var command = new RegisterCommand(request.FirstName, request.LastName, request.Email,request.Password);
+        OneOf<AuthenticationResult, IError> authResult = await _mediator.Send(command);
         
-        if (registerResult.IsT0)
-        {
-            
-        
-        var authResult = registerResult.AsT0;
-        var response = new AuthenticationResponse(
-        authResult.User.id,
-        authResult.User.firstName,
-        authResult.User.lastName,
-        authResult.User.email,
-        authResult.token
-
-        return Ok(response);
+        return authResult.Match(
+            authResult =>Ok(MapAuthResult(authResukt)),
+            errors => Problem(errors);
         );
 
         }
 
-        return Problem((int)statusCode : StatusCodes.Status409Conflict, title :"Email already in use!")
         
-    }
+        
+    };
 
-
+    
      [HttpPost("login")]
     
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-         var authResult = _authenticationService.Login(request.email,request.password);
-         var response = new AuthenticationResponse(
-         authResult.User.id,
-         authResult.User.firstName,
-         authResult.User.lastName,
-         authResult.User.email,
-         authResult.token)
-        return Ok(response);
+         var query = newLoginQuery(request.Email,request.Password);
+         var authResult = await _mediator.Send(query);
+       if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+       {
+        return Problem(
+            statusCode: StatusCode.Status402Unauthorized,
+            title:authResult.FirstError.Description
+        );
+       }
 
-        return Ok(request);
+       return authResult.Match(
+        authResult => Ok(MapAuthResult(authResult)),
+        error => Problem(errors)
+       );
+    }
+
+    private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+    {
+        return new AuthenticationResponse(
+            authResult.User.Id,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
+            authResult.User.Password
+        );
     }
     
 
 
-}

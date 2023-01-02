@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "6boj0nJUdJY2yqOdbyqiysTUDXdO6NvN0V3h4KcK8H945ztGT+Tps/J15P7XSIZnedsa/Cgz7AzzLOy8uUCH/A==",
+  "dgSpecHash": "xYDCkz/VPjSotoYAzNCJE6R/LZ8kCjVqMLy2fluH5tY84LQURCKsdKDDGkckO+IHnQNqi2WEO3Mt/UrhaHfZQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\WALE\\Desktop\\projects\\repos\\Snacker\\Snacker.Application\\Snacker.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\WALE\\.nuget\\packages\\fluentresults\\3.15.1\\fluentresults.3.15.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\oneof\\3.0.223\\oneof.3.0.223.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }
