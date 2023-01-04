@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "xYDCkz/VPjSotoYAzNCJE6R/LZ8kCjVqMLy2fluH5tY84LQURCKsdKDDGkckO+IHnQNqi2WEO3Mt/UrhaHfZQA==",
+  "dgSpecHash": "M5QT14L+ijeZoODlXMGhlKOjbAiZJ+84Af/dRLCqqvL9KAjpbGH9GdPlJhnEKuoLZCFaUH9xslPjwKcmLgwGFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WALE\\Desktop\\projects\\repos\\Snacker\\Snacker.Application\\Snacker.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WALE\\.nuget\\packages\\fluentresults\\3.15.1\\fluentresults.3.15.1.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\WALE\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\WALE\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
