@@ -22,7 +22,7 @@ public string GenerateToken(User user)
         new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(_jwtSettings.Secret)
         ),
-        SecurityAlgorithms.HashSha256
+        SecurityAlgorithms.HmacSha256
     );
     var claims = _new[]
     {

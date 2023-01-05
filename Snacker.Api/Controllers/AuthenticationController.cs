@@ -20,13 +20,14 @@ using OneOf;
 namespace Snacker.Api.Controllers;
 
 
-[ApiController]
+
 [Route ("auth")]
-[ErrorHandlingMiddleware]
-public class AuthenticationController : ControllerBase
+[AllowAnonymous]
+
+public class AuthenticationController : ApiController
 {
-    private readonly ISender _mediator
-    private readonly IMapper _mapper
+    private readonly ISender _mediator;
+    private readonly IMapper _mapper;
    
    public AuthenticationController(ISender mediator, IMapper mapper )
    {

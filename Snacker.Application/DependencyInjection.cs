@@ -16,7 +16,7 @@ public static IServiceCollection AddApplication(this IServiceCollection services
 {
   services.AddMediatR(typeof(DependencyInjection).Assembly);
   services.AddScoped(
-  typeof(IPipelineBehaviour<,>),
+   typeof(IPipelineBehaviour<,>),
   typeof(ValidationBehaviour<,>)
   );
   //services.AddScoped<IValidator<RegisterCommand>,RegisterCommandValidator>(); replaced by

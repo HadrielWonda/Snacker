@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Snacker.Api.Controllers;
 
     
-    public class ErrorsController : ControllerBase
+    public class ErrorsController : ApiController
     {
         [Route("/error")]
         public IActionResult Error()
