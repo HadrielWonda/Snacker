@@ -13,9 +13,6 @@ builder.Services
 .AddPresentation();
 .AddApplication();
 .AddInfrastructure(builder.Configuration);
-
-//builder.Services.AddControllers(options => options.Filters.Add<ErrorHandlingsFilterAttributes>());
-
 }
 
 
@@ -25,16 +22,9 @@ var app = builder.Build();
 {
 app.UseExceptionHandler("/error");
 
-app.Map("/error",{HttpContext httpContext} =>
-//{
-//    Exception? exception = httpContext.Features.Get<IExceptionHandlerFearure>()?.Error;
-
-  //  return Results.Problem();
-//}
-
-);
-//app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 app.Run();
 }
