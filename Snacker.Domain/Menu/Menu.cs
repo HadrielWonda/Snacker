@@ -12,6 +12,10 @@ namespace Snacker.Domain.Menu;
     {
         private readonly List<MenuSection> _sections = new();
 
+        private readonly List<SnackId> _snackId = new(); 
+
+        private readonly List<MenuReviewId> _menuReviewId = new(); 
+
         public string Name {get; }
 
         public string Description {get; }
