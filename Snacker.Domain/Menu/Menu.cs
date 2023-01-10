@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Snacker.Domain.Common.Models;
-using Snacker.3.ValueObjects;
+using Snacker.Domain.Menu.ValueObjects;
 using Snacker.Domain.Menu.Entities;
 
 namespace Snacker.Domain.Menu;
