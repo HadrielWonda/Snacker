@@ -6,7 +6,7 @@ POST http://localhost/5056/auth/register
 {
 "firstName" : "Wale",
 "lastName" : "Abany",
-"email" : "olawalebash20172gmail.com",
+"email" : "hadrielwondar@gmail.com",
 "password" : "bluddah" 
 
 }
