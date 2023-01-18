@@ -24,4 +24,15 @@ namespace Snacker.Domain.Menu.Entities;
         {
             return new(MenuItemsId.CreateUnique(),name,description);
         }
+
+
+
+    #pragma warning disable CS8618
+
+      private MenuItems()
+      {
+        
+      }
+
+    #pragma warning restore CS8618
     }

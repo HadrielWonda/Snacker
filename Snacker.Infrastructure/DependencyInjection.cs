@@ -11,6 +11,8 @@ using Snacker.Infrastructure.Authentication;
 using Snacker.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.UseSqlServer;
 
 
 
@@ -32,6 +34,9 @@ public static class DependencyInjection
 
 public static IServiceCollection.AddPersistance(this IServiceCollection services)
  {
+    services.AddDBContext<SnackerDbContext>(options =.
+    options.UseSqlServer("")
+    );
     services.AddScoped<IUserRepository,UserRepository>();
     services.AddScoped<IMenuRepository,MenuRepository>();
 

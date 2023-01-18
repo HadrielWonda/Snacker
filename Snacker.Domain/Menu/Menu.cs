@@ -16,26 +16,26 @@ namespace Snacker.Domain.Menu;
 
         private readonly List<MenuReviewId> _menuReviewId = new(); 
 
-        public string Name {get; }
+        public string Name {get; private set; }
 
-        public string Description {get; }
+        public string Description {get; private set; }
 
-        public float AverageRating {get; }
+        public float AverageRating {get; private set; }
 
         public IReadOnlyList<MenuSection> Sections => _sections;
 
 
 
 
-        public HostId HostIds {get;}
+        public HostId HostIds {get; private set;}
 
         public IReadOnlyList<DinnerId> DinnerIds => _dinnerIds;
 
         public IReadOnlyList<MenuReviewId> MenuReviewIds => _menuReviewIds;
 
-        public DateTime CreatedDateTime { get; }
+        public DateTime CreatedDateTime { get; private set;}
 
-        public DateTime UpdatedDateTime { get; }
+        public DateTime UpdatedDateTime { get; private set;}
 
 
 
@@ -67,4 +67,13 @@ namespace Snacker.Domain.Menu;
                DateTime.UtcNow
             );
         }
+
+     #pragma warning disable CS8618
+
+      private Menu()
+      {
+
+      }
+
+    #pragma warning restore CS8618
     }

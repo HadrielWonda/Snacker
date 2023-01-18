@@ -10,9 +10,9 @@ namespace Snacker.Domain.Menu.Entities;
     {
         private readonly List<MenuItems> _items = new();
 
-        public string Name {get; }
+        public string Name {get; private set;}
 
-        public string Description {get; }
+        public string Description {get; private set; }
 
         public IReadOnlyList<MenuItems> Items => _items.AsReadOnly(); //or ToList.. cant pick
 
@@ -32,4 +32,16 @@ namespace Snacker.Domain.Menu.Entities;
                 description
             );
         }
+
+
+
+
+    #pragma warning disable CS8618
+
+      private MenuSection()
+      {
+        
+      }
+
+    #pragma warning restore CS8618
     }
